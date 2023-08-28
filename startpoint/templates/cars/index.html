@@ -8,8 +8,12 @@
             <b>Model: </b>{{car.model}} <br>
             <b>Buying Cost: </b>{{car.buying_cost}} <br>
             <b>Selling Cost: </b>{{car.selling_cost}} <br>
-            <b>Quantity: </b>{{car.quantity}}
-            {}
+            <b>Quantity: </b>{{car.quantity}} <br>
+            <b>Stock Level: </b>{% if car.quantity < 5 %}
+            <span>Low stock</span>
+            {% else %}
+            <span>High stock</span>
+            {% endif %}
         </p>
         <hr>
 
