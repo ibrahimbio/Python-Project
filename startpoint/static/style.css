@@ -40,3 +40,7 @@ form {
     max-height:10%;
 }
 
+option {
+
+    width: 10%;
+}

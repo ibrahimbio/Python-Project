@@ -3,8 +3,15 @@
 {% for car in all_cars %}
 <div class="car">
     <div class="content">
-        <a href="/cars/{{car.id}}">{{car.brand.name}}</a>
-
+        <p><a href="/cars/{{car.id}}">{{car.brand.name}}</a></p>
+        <p><b>Make: </b>{{car.make}} <br>
+            <b>Model: </b>{{car.model}} <br>
+            <b>Buying Cost: </b>{{car.buying_cost}} <br>
+            <b>Selling Cost: </b>{{car.selling_cost}} <br>
+            <b>Quantity: </b>{{car.quantity}}
+            {}
+        </p>
+        <hr>
 
     </div>
 </div>

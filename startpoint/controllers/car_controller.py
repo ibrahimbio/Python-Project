@@ -29,14 +29,32 @@ def show_car(id):
     car = car_repository.select(id)
     return render_template('cars/show.html', car=car)
 
-#CREATE
+#NEW
 #GET 'cars/new'
 
 @cars_blueprint.route('/cars/new')
 def new_cars():
     brands = brand_repository.select_all()
+    # pdb.set_trace()
     return render_template('cars/new.html', all_brands = brands)
 
+
+#CREATE
+#POST '/cars'
+
+@cars_blueprint.route('/cars/', methods =['POST'])
+def add_car():
+    brand_id= request.form['brand_id']
+    make = request.form['make']
+    model = request.form['model']
+    buying_cost = request.form['buying_cost']
+    selling_cost = request.form['selling_cost']
+    quantity = request.form['quantity']
+    sold = request.form['sold']
+    brand = brand_repository.select(brand_id)
+    car = Car(brand, make, model,buying_cost, selling_cost, quantity,sold)
+    car_repository.save(car)
+    return redirect('/cars')
 
 
 

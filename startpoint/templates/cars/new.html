@@ -3,7 +3,14 @@
 <form action="/cars" method="post">
     <div>
         <label for="brand">Brand:</label>
-        <input type="text" name="brand" id="brand">
+       <select name="brand_id" id="brand">     
+        {% for brand in all_brands %}
+           <option value="{{brand.id}}"> 
+            {{brand.name}}
+        </option>
+        {% endfor %}
+        </select>
+
     </div>
 
     <div>
@@ -30,11 +37,16 @@
 
         <div>
             <label for="quantity">Quantity:</label>
-            <input type="number" name="quantity" id="quantity">
-
-            <input type="submit" value="Add Vehicle" id="">
+            <input type="number" name="quantity" id="quantity"> <br>   
         </div>
-
+        <div>
+            <label for="sold">Sold: </label>
+            <select name="sold" id="sold">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+            <button type="submit">Add Vehicle</button>
 </form>
 
 

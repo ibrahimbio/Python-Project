@@ -20,7 +20,7 @@ def select_all():
     results = run_sql(sql)
 
     for row in results:
-        brand = (row['name'], row['id'])
+        brand = Brand(row['name'], row['id'])
         brands.append(brand)
     return brands
 
