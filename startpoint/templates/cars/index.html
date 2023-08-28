@@ -1,0 +1,15 @@
+{% extends 'base.html' %} {% block content %}
+
+{% for car in all_cars %}
+<div class="car">
+    <div class="content">
+        <a href="/cars/{{car.id}}">{{car.brand.name}}</a>
+
+
+    </div>
+</div>
+
+
+
+{% endfor %}
+{% endblock %} 

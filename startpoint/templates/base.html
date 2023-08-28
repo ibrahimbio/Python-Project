@@ -1,0 +1,23 @@
+<html>
+
+
+    <head>
+        <title>Bespoke Autos</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    </head>
+
+    <body>
+       <nav class="menu">
+            <img class="logo2" src="{{url_for('static', filename='logo1.png')}}">
+            <h2 class="logo1">Bespoke Autos Inventory</h2>
+            <a class="anchor" href="/">HOME</a>
+            <a class="anchor" href="/cars">INVENTORY</a>
+            <a class="anchor" href="/cars/new">ADD VEHICLE</a>
+        </nav>
+        <hr>
+        
+
+        {% block content %}{% endblock %}
+    </body>
+
+</html>

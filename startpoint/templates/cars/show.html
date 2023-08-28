@@ -1,0 +1,13 @@
+{% extends 'base.html' %} {% block content %}
+
+<div>
+    <p>Brand:{{car.brand.name}}</p>
+    <p>Make: {{car.make}}</p>
+    <p>Model: {{car.model}}</p>
+    <p>Buying Cost: £{{car.buying_cost}}</p>
+    <p>Selling Cost: £{{car.selling_cost}}</p>
+    <p>Quantity in Stock: {{car.quantity}}</p>
+   
+</div>
+
+{% endblock %}

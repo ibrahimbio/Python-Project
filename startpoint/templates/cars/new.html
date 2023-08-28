@@ -1,0 +1,45 @@
+{% extends 'base.html' %} {% block content %}
+    
+<form action="/cars" method="post">
+    <div>
+        <label for="brand">Brand:</label>
+        <input type="text" name="brand" id="brand">
+    </div>
+
+    <div>
+        <label for="make">Make:</label>
+        <input type="text" name="make" id="make">
+    </div>
+
+    <div>
+        <label for="model">Model:</label>
+        <input type="text" name="model" id="model">
+    </div>
+
+        <div>
+            <label for="buying_cost">Buying Cost:</label>
+            <span class="currency">£</span>
+            <input type="text" name="buying_cost" id="buying_cost">
+        </div>
+
+        <div>
+            <label for="selling_cost">Selling Cost:</label>
+            <span class="currency">£</span>
+            <input type="text" name="selling_cost" id="selling_cost">
+        </div>
+
+        <div>
+            <label for="quantity">Quantity:</label>
+            <input type="number" name="quantity" id="quantity">
+
+            <input type="submit" value="Add Vehicle" id="">
+        </div>
+
+</form>
+
+
+
+
+
+
+{% endblock  %}
