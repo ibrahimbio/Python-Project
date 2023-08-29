@@ -68,6 +68,7 @@ body {
 
     color: #EEEEEE;
     margin-right: 470px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .edit_form {
@@ -80,11 +81,13 @@ body {
 .edit_brand {
    color: #EEEEEE; 
     margin-right: 505px
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .edit_qm{
     margin-right: 505px;
-    color: #EEEEEE; 
+    color: #EEEEEE;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
 
 }
 
@@ -106,6 +109,7 @@ body {
     margin-top: 30px;
     color:#EEEEEE;
 
+
 }
 
 .new_car > div {
@@ -114,6 +118,15 @@ body {
     padding: 20px;
 }
 
+.new_form_lable {
+    margin-right:230px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.new_lable {
+    margin-right:280px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 input {
     width: 30%;
     padding: 12px 20px;
