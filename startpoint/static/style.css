@@ -37,6 +37,7 @@ body {
     text-decoration: none;
     font-weight: bold;
     color: #F6BA6F;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .car_name:hover{
@@ -47,6 +48,7 @@ body {
 
 .car_details {
     color: #EEEEEE;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .edit {
     text-align: center;
@@ -61,7 +63,7 @@ body {
 }
 
 .edit_button:hover {
-    color: #F6BA6F;
+    color: #EEEEEE;
 }
 
 .edit_label  {
@@ -80,9 +82,10 @@ body {
 
 .edit_brand {
    color: #EEEEEE; 
-    margin-right: 505px
+    margin-right: 505px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 
 .edit_qm{
     margin-right: 505px;
@@ -99,6 +102,23 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
+
+.new_brand{
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+.new_brand_name {
+    margin-right: 280px;
+    /* color: #EEEEEE; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 .new_car{
     /* border-style: solid; */
     text-align: center;
@@ -111,6 +131,8 @@ body {
 
 
 }
+
+
 
 .new_car > div {
     border-radius: 5px;
@@ -127,6 +149,7 @@ body {
     margin-right:280px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 input {
     width: 30%;
     padding: 12px 20px;
@@ -149,10 +172,14 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-weight: bold;
 
 
 }
 
+button:hover{
+    background-color: #f2b269;
+}
 .logo1 {
 
     display: inline-block;
@@ -189,6 +216,7 @@ option {
     margin-left: 25%;
     margin-right: 25%;
     color: #EEEEEE;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
 
 }

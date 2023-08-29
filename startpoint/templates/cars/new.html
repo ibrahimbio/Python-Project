@@ -3,8 +3,8 @@
 <form class="new_car" action="/cars" method="post">
 <div>
     <div>
-        <label  for="brand">Brand:</label> <br>
-       <select name="brand_id" id="brand">     
+        <label class="new_brand_name" for="brand">Brand:</label> <br>
+       <select class="new_brand" name="brand_id" id="brand">     
         {% for brand in all_brands %}
            <option value="{{brand.id}}"> 
             {{brand.name}}
@@ -40,13 +40,13 @@
             <label class="new_lable" for="quantity">Quantity:</label> <br>
             <input type="number" name="quantity" id="quantity"> <br>   
         </div>
-        <!-- <div>
+        <div>
             <label for="sold">Sold: </label>
             <select name="sold" id="sold">
                 <option value="Yes">Yes</option>
                 <option value="No">No</option>
             </select>
-        </div> -->
+        </div>
     </div>
             <button type="submit">Add Vehicle</button>
 </form>
