@@ -3,20 +3,22 @@
 {% for car in all_cars %}
 <div class="car">
     <div class="content">
-        <p><a href="/cars/{{car.id}}">{{car.brand.name}}</a></p>
-        <p><b>Make: </b>{{car.make}} <br>
+        <p ><a class="car_name" href="/cars/{{car.id}}">{{car.brand.name}}</a></p>
+            <p><b>Make: </b>{{car.make}} <br>
             <b>Model: </b>{{car.model}} <br>
             <b>Buying Cost: </b>{{car.buying_cost}} <br>
             <b>Selling Cost: </b>{{car.selling_cost}} <br>
             <b>Quantity: </b>{{car.quantity}} <br>
-            <b>Stock Level: </b>{% if car.quantity < 5 %}
-            <span>Low stock</span>
-            {% else %}
+            <b>Stock Level: </b>{% if car.quantity >= 5 %}
             <span>High stock</span>
+            {% elif car.quantity == 0 %}
+            <span>Out of stock</span>
+            {% else %}
+            <span>Low stock</span>
             {% endif %}
         </p>
-        <hr>
 
+        <hr>
     </div>
 </div>
 

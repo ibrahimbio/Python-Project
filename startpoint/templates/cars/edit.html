@@ -1,0 +1,55 @@
+{% extends 'base.html' %} {% block content %}
+
+<form action="/cars/{{car.id}}" method="post">
+    <div>
+        <label for="brand">Brand:</label>
+        <select name="brand" id="brand">
+            {% for brand in all_brands %}
+            <option value="{{ brand.id }}" {% if car.brand.id == brand.id %} selected="selected"{% endif %}>
+              {{ brand.name}}  
+            </option>
+            {% endfor %}
+        </select>
+    </div>
+
+    <div><label for="make">Make:</label>
+        <input type="text" id="make" name="make" value="{{car.make}}" required>
+    </div>
+
+    <div>
+        <label for="model">Model: </label>
+        <input type="text" name="model" id="model" value="{{car.model}}" required>
+    </div>
+
+    <div>
+        <label for="buying_cost">Buying Cost</label>
+        <span class="currency">£</span>
+        <input type="text" name="buying_cost" id="buying_cost" value="{{car.buying_cost}}" required>
+    </div>
+
+    <div>
+        <label for="selling_cost">Selling Cost:</label>
+        <span class="currency">£</span>
+        <input type="text" name="selling_cost"  value="{{car.selling_cost}}" id="selling_cost" required>
+    </div>
+
+    <div>
+        <label for="quantity">Quantity:</label>
+        <input type="number" name="quantity" id="quantity"  value="{{car.quantity}}" required> <br>   
+    </div>
+    <div>
+        <label for="sold">Sold: </label>
+        <select name="sold" id="sold">
+            <option value="True">True</option>
+            <option value="False">False</option>
+        </select>
+    </div>
+
+    <button type="submit">Update Details</button>
+        
+
+</form>
+
+
+
+{% endblock %}

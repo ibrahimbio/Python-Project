@@ -59,8 +59,8 @@ def delete(id):
 
 #Update function:
 def update(car):
-    sql = "UPDATE cars SET (brand, make, model, buying_cost, selling_cost, quantity, sold) = (%s, %s, %s, %s, %s, %s, %s) WHERE id =%s"
-    values = [car.brand.id, car.make, car.model, float(car.buying_cost), float(car.selling_cost), car.quantity, car.sold]
+    sql = "UPDATE cars SET (brand_id, make, model, buying_cost, selling_cost, quantity, sold) = (%s, %s, %s, %s, %s, %s, %s) WHERE id =%s"
+    values = [car.brand.id, car.make, car.model, float(car.buying_cost), float(car.selling_cost), car.quantity, car.sold, car.id]
     run_sql(sql,values)
 
 

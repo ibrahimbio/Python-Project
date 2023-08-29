@@ -50,6 +50,6 @@ def update(brand):
     values  = [brand.name, brand.id]
     run_sql(sql,values)
 
-    
+
 
 
