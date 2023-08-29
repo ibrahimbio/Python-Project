@@ -1,6 +1,7 @@
 {% extends 'base.html' %} {% block content %}
     
 <form class="new_car" action="/cars" method="post">
+<div>
     <div>
         <label for="brand">Brand:</label>
        <select name="brand_id" id="brand">     
@@ -46,6 +47,7 @@
                 <option value="No">No</option>
             </select>
         </div>
+    </div>
             <button type="submit">Add Vehicle</button>
 </form>
 

@@ -24,10 +24,9 @@ body {
 
     background-image: url(https://www.rybrook.co.uk/mclaren/wp-content/uploads/sites/6/2021/08/720S_GT3X-Studio-1-2-scaled.jpg);
 
-
-    
     background-size: cover;
     background-position: center;
+
 }
 
 .content{
@@ -65,14 +64,27 @@ body {
     color: #F6BA6F;
 }
 
-.edit_form > div > div label {
+.edit_label  {
 
     color: #EEEEEE;
+    margin-right: 470px;
 }
 
 .edit_form {
     margin-top: 60px;
     text-align: center;
+
+
+}
+
+.edit_brand {
+   color: #EEEEEE; 
+    margin-right: 505px
+}
+
+.edit_qm{
+    margin-right: 505px;
+    color: #EEEEEE; 
 
 }
 
@@ -92,15 +104,42 @@ body {
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 30px;
+    color:#EEEEEE;
 
+}
+
+.new_car > div {
+    border-radius: 5px;
+    /* background-color: #f2f2f2; */
+    padding: 20px;
 }
 
 input {
-    width: 100%;
+    width: 30%;
     padding: 12px 20px;
-    margin: ;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+
 
 }
+
+button {
+    width: 30%;
+    background-color: #F6BA6F;
+    color: aliceblue;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+
+}
+
 .logo1 {
 
     display: inline-block;
@@ -154,4 +193,31 @@ option {
     margin-top: 60px;
 
     
+}
+
+span {
+ color: #EEEEEE;
+}
+
+.select_brand {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+
+.sold {
+
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }

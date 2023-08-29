@@ -13,7 +13,6 @@ def save(car):
     sql = "INSERT INTO cars ( brand_id, make, model, buying_cost, selling_cost, quantity, sold) VALUES (%s, %s, %s, %s, %s, %s, %s) RETURNING*"
     values = [car.brand.id, car.make, car.model, car.buying_cost, car.selling_cost, car.quantity, car.sold]
     results = run_sql(sql, values)
-    
     car.id = results[0]['id']
     return car
 
