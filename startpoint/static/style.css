@@ -2,17 +2,30 @@
     text-decoration: None;
     margin: 5px 10px;
     padding-top: 10%;
-    color: #EEEEEE;
+    /* color: #F6BA6F; */
+    color: #F6BA6F;
+    font-size:larger;
+    
 }
 
 .anchor:hover{
-    color: #F6BA6F;
+
+    color: white;
+   
+
+    
 }
 
 body {
 
-    background-image: url(https://cdn.shopify.com/s/files/1/0075/6354/2643/files/Small-11995-McLaren-765LT.jpg?v=1588853362);
+    /* background-image: url(https://cdn.shopify.com/s/files/1/0075/6354/2643/files/Small-11995-McLaren-765LT.jpg?v=1588853362); */
 
+    /* background-image: url(https://images.barrons.com/im-304442?width=700&size=1.6243654822335025&pixel_ratio=2); */
+
+    background-image: url(https://www.rybrook.co.uk/mclaren/wp-content/uploads/sites/6/2021/08/720S_GT3X-Studio-1-2-scaled.jpg);
+
+
+    
     background-size: cover;
     background-position: center;
 }
@@ -24,28 +37,47 @@ body {
    
     text-decoration: none;
     font-weight: bold;
-    color: #EEEEEE;
+    color: #F6BA6F;
 }
-.welcome{
 
-    /* color: #EEEEEE; */
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.car_name:hover{
 
+    color: #EEEEEE;
     
 }
 
+.car_details {
+    color: #EEEEEE;
+}
 .edit {
     text-align: center;
+    
 }
 .edit_button {
     text-decoration:  none;
-    /* color: #EEEEEE; */
+    color: #F6BA6F;
     font-weight: bold;
+    
+    
+}
+
+.edit_button:hover {
+    color: #F6BA6F;
+}
+
+.edit_form > div > div label {
+
+    color: #EEEEEE;
+}
+
+.edit_form {
+    margin-top: 60px;
+    text-align: center;
+
 }
 
 .menu {
-    background-color: #1D5B79;  
+    /* background-color: #1D5B79;   */
     /* text-align:  center; */
     padding-top:3%;
     font-weight: bold;
@@ -53,18 +85,27 @@ body {
 }
 
 .new_car{
-    border-style: solid;
+    /* border-style: solid; */
     text-align: center;
-    border-color: #EEEEEE;
+    border-color: #D8D8D8;
     border-radius: 20px;
     margin-left: 20%;
     margin-right: 20%;
+    margin-top: 30px;
+
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: ;
 
 }
 .logo1 {
 
     display: inline-block;
     padding-left: 30px;
+    color:#EEEEEE;
 
    
 }
@@ -95,6 +136,22 @@ option {
     border-radius: 20px;
     margin-left: 25%;
     margin-right: 25%;
+    color: #EEEEEE;
     
 
+}
+
+.polite{
+    color:#EEEEEE;
+    font-style: italic;
+}
+.welcome{
+
+    /* color: #EEEEEE; */
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#EEEEEE;
+    margin-top: 60px;
+
+    
 }

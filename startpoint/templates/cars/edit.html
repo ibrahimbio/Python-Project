@@ -1,6 +1,7 @@
 {% extends 'base.html' %} {% block content %}
 
-<form action="/cars/{{car.id}}" method="post">
+<form class="edit_form" action="/cars/{{car.id}}" method="post">
+    <div>
     <div>
         <label for="brand">Brand:</label>
         <select name="brand" id="brand">
@@ -44,7 +45,7 @@
             <option value="False">False</option>
         </select>
     </div>
-
+</div>
     <button type="submit">Update Details</button>
         
 
