@@ -1,4 +1,5 @@
-DROP TABLE IF EXISTS cars;
+
+                                                                                                                                                                                                DROP TABLE IF EXISTS cars;
 DROP TABLE IF EXISTS brands;
 
 CREATE TABLE brands (
