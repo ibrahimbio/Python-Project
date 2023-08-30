@@ -35,9 +35,11 @@ My client asked me to build a full stack application that would be used by the s
 
 # SET UP 
 
-1 Git clone my repo locally
+1 - Git clone my repo locally
 
 - In terminal
 ```
 git clone git@github.com:ibrahimbio/Python-Project.git
 ````
+
+2 - Setup Database
