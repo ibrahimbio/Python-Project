@@ -43,3 +43,26 @@ git clone git@github.com:ibrahimbio/Python-Project.git
 ````
 
 2 - Setup Database
+
+
+```                                                                                                                              DROP TABLE IF EXISTS cars;
+DROP TABLE IF EXISTS brands;
+
+CREATE TABLE brands (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255)
+);
+
+CREATE TABLE cars(
+    id SERIAL PRIMARY KEY,
+    make VARCHAR(255),
+    model VARCHAR(255),
+    buying_cost FLOAT,
+    selling_cost FLOAT,
+    quantity INT,
+    sold BOOLEAN DEFAULT FALSE,
+    brand_id INT REFERENCES brands(id) ON DELETE CASCADE
+
+);
+
+```

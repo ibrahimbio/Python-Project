@@ -1,5 +1,4 @@
 
-``` 
                                                                                                                                                                                                DROP TABLE IF EXISTS cars;
 DROP TABLE IF EXISTS brands;
 
@@ -20,7 +19,6 @@ CREATE TABLE cars(
 
 );
 
-```
 -- INSERT INTO brands (name) VALUES ('Mercedes Benz');
 -- INSERT INTO brands (name) VALUES ('BMW');
 
