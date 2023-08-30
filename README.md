@@ -1,10 +1,10 @@
 # Python-Project
 
-## Brief
+# Brief
 
 My client asked me to build a full stack application that would be used by the staff to check inventory of vehicle they have in stock using Python, Flask, HTML, CSS and PostgreSQL.
 
-## MVP
+# MVP
 
 - A staff should be able to view a list of vehicles in the investory
 - A staff should be a able to see the vehicle make, model, buying cost, selling cost, quantity available in store.
@@ -13,24 +13,31 @@ My client asked me to build a full stack application that would be used by the s
 - A staff should be able to edit the details of a vehicle in the list.  
 
 
-## Learnings
+# Learnings
 
-# PostgreSQL 
+## PostgreSQL 
 
 - Practically learnt how to add create     tables with a one to many relationship and have it to communicate with my app to new information added by a user.
 
-# Python 
+## Python 
 
 - Learnt how to build a repository and a controller from scratch and also debug any issue encounter while running my program. 
 
-# Flask
+## Flask
 
-- I now have a better understanding of how the flask works. 
+- I now have a better understanding of how flask works. 
  
 
-# CSS
+## CSS
 
 - I research a few ways on how to implement styling of forms and background image on my app. Also discovered color palette that relief of the stress using primary colors to style the app.
 
 
-## SET UP 
+# SET UP 
+
+1 Git clone my repo locally
+
+- In terminal
+```
+git clone git@github.com:ibrahimbio/Python-Project.git
+````
