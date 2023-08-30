@@ -76,10 +76,91 @@ CREATE TABLE cars(
 
 ```
 
-4 - Checked if the table was created successfully.
+4 - Created a run_sql file that connects my database to my app. Kept in the same folder with the databse file. 
+  
+```
+import psycopg2  #imported psycopg2, allows python to access databse
+import psycopg2.extras as ext
+
+def run_sql(sql, values = None):
+    conn = None
+    results = []
+
+    try:
+        conn=psycopg2.connect("dbname='car_inventory'")
+        cur = conn.cursor(cursor_factory=ext.DictCursor)
+        cur.execute(sql, values)
+        conn.commit()
+        results = cur.fetchall()
+        cur.close()
+    except (Exception, psycopg2.DatabaseError) as error:
+        print(error)
+    finally:
+        if conn is not None:
+            conn.close()
+    return results
+
+```
+
+
+5 - Checked if the table was created successfully.
 - In terminal
 ```
  #terminal 
 
 psql -d car_inventory -f db/car_inventory.sql
 ```
+
+6 - Created a '.flaskenv' file to run the flask app, debug and port. 
+
+```
+FLASK_APP =app.py
+FLASK_DEBUG =true
+FLASK_RUN_HOST=127.0.0.1
+FLASK_RUN_PORT =4999
+
+```
+
+7 - Created Class models for the app in two different files but in the same "models" folder
+
+```
+ class Brand:
+    def __init__(self, name, id=None):
+        self.name = name
+        self.id = id
+        
+class Car:
+    def __init__(self, brand,  make, model, buying_cost, selling_cost, quantity,  sold = False, id = None):
+        self.brand = brand
+        self.make = make
+        self.model = model
+        self.buying_cost = buying_cost
+        self.selling_cost = selling_cost
+        self.quantity = quantity
+        self.sold = sold
+        self.id = id
+
+
+    def mark_sold(self):
+        self.sold = True
+
+```
+
+8 - Created a Repository file for each class and imported the run_sql function, and required classes
+
+```
+#for brand_reposiitory folder:
+
+from db.run_sql import run_sql
+from models.brand import Brand
+from models.car import Car
+
+#for car_reposiitory folder:
+
+from db.run_sql import run_sql
+from models.car import Car
+from models.brand import Brand
+import repositories.brand_repository as brand_repository
+
+
+``` 
