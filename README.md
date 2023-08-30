@@ -164,3 +164,13 @@ import repositories.brand_repository as brand_repository
 
 
 ``` 
+
+9 - Created a controller file to create instances of brand and cars.
+    - Here all class and repos were imported
+    ```
+    import pdb # a trace, this indicates where our program stops after running it
+    import repositories.brand_repository as brand_repository
+    import repositories.car_repository as car_repository
+    from models.brand import Brand
+    from models.car import Car
+    ```
