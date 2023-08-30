@@ -15,24 +15,20 @@ My client asked me to build a full stack application that would be used by the s
 
 ## Learnings
 
+# PostgreSQL 
 
+- Practically learnt how to add create     tables with a one to many relationship and have it to communicate with my app to new information added by a user.
 
-Shop Inventory:
-Build an app which allows a shopkeeper to track their shop's inventory. This is not an app which the customer will see, it is an admin/management app for the shop workers.
+# Python 
 
-MVP
-The inventory should track individual products, including a name, description, stock quantity, buying cost, and selling price.
-The inventory should track manufacturers, including a name and any other appropriate details.
-The shop can sell anything you like, but you should be able to create and edit manufacturers and products separately.
-This might mean that it makes more sense for a car shop to track makes and models of cars. Or a bookstore might sell books by author, or by publisher, and not by manufacturer. You are free to name classes and tables as appropriate to your project.
-Show an inventory page, listing all the details for all the products in stock in a single view.
-As well as showing stock quantity as a number, the app should visually highlight "low stock" and "out of stock" items to the user.
-Inspired by
-eBay, Amazon (back end only), Magento
+- Learnt how to build a repository and a controller from scratch and also debug any issue encounter while running my program. 
 
-Possible Extensions
-Calculate the markup on items in the store, and display it in the inventory
-Filter the inventory list by manufacturer. For example, provide an option to view all books in stock by a certain author.
-Categorise your items. Books might be categorised by genre (crime, horror, romance...) and cars might be categorised by type (SUV, coupé, hatchback...). Provide an option to filter the inventory list by these categories.
-Mark manufacturers as active/deactivated. Deactivated manufacturers will not appear when creating new products.
-g38_classnotes/week_05/projects/bank/Shop_Inventory.md at main
+# Flask
+
+- I know have a better understanding of how the flask works. 
+ 
+
+# CSS
+
+- I research a few ways on how to implement styling of forms and background image on my app. Also discovered color palette that relief of the stress using primary colors to style the app.
+
