@@ -25,10 +25,12 @@ My client asked me to build a full stack application that would be used by the s
 
 # Flask
 
-- I know have a better understanding of how the flask works. 
+- I now have a better understanding of how the flask works. 
  
 
 # CSS
 
 - I research a few ways on how to implement styling of forms and background image on my app. Also discovered color palette that relief of the stress using primary colors to style the app.
 
+
+## SET UP 
