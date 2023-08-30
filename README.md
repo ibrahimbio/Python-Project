@@ -39,10 +39,19 @@ My client asked me to build a full stack application that would be used by the s
 
 - In terminal
 ```
+    #terminal 
 git clone git@github.com:ibrahimbio/Python-Project.git
 ````
-
 2 - Setup Database
+
+ - In terminal 
+    ```
+    #terminal 
+    createdb car_inventory
+
+    ```
+
+3 -  Create Tables
 
 
 ```                                                                                                                              DROP TABLE IF EXISTS cars;
@@ -65,4 +74,12 @@ CREATE TABLE cars(
 
 );
 
+```
+
+4 - Checked if the table was created successfully.
+- In terminal
+```
+ #terminal 
+
+psql -d car_inventory -f db/car_inventory.sql
 ```
