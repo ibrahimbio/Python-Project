@@ -19,6 +19,7 @@ def cars():
     sorted_cars = sorted(cars, key=lambda car:car.brand.name)
     return render_template('cars/index.html', all_cars = sorted_cars)
 
+
 # SHOW
 # GET '/cars/<id>'
 

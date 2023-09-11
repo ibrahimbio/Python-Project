@@ -6,8 +6,8 @@
         <p ><a class="car_name" href="/cars/{{car.id}}">{{car.brand.name}}</a></p>
             <p class="car_details"><b>Make: </b>{{car.make}} <br>
             <b>Model: </b>{{car.model}} <br>
-            <b>Buying Cost: </b>{{car.buying_cost}} <br>
-            <b>Selling Cost: </b>{{car.selling_cost}} <br>
+            <b>Buying Cost: </b>£ {{car.buying_cost}} <br>
+            <b>Selling Cost: </b>£ {{car.selling_cost}} <br>
             <b>Quantity: </b>{{car.quantity}} <br>
             <b>Stock Level: </b>{% if car.quantity >= 5 %}
             <span>High stock</span>
@@ -18,7 +18,7 @@
             {% endif %}
         </p>
 
-        <hr>
+        
     </div>
 </div>
 

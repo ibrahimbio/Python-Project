@@ -1,0 +1,16 @@
+{% extends 'base.html' %} {% block content %} 
+
+
+{% for brand in all_brands %}
+<div class="brand">
+
+<p>{{brand.name}}</p>
+
+</div>
+
+
+
+
+
+{% endfor %}
+{% endblock  %}

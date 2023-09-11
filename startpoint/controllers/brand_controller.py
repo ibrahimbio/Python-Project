@@ -10,4 +10,8 @@ brands_blueprint = Blueprint("brand", __name__)
 @brands_blueprint.route('/brands')
 def brands():
     brands = brand_repository.select_all()
-    return render_template('/brands/index.html', title='Car Bands in Stock', all_brands =brands)
+    return render_template('brands/brand.html', title='Stock', all_brands=brands)
+
+
+
+
